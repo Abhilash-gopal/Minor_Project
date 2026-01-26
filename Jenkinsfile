@@ -3,8 +3,8 @@ pipeline {
 
     environment {
         AWS_REGION = "ap-south-1"
-        ECR_REPO = "956026718260.dkr.ecr.ap-south-1.amazonaws.com/minor_project"
-        IMAGE_TAG = "latest"
+        ECR_REPO = "956026718260.dkr.ecr.ap-south-1.amazonaws.com/minor_project_repo"
+        IMAGE_TAG = "portfolio"
     }
 
     stages {
