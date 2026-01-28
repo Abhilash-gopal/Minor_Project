@@ -1,70 +1,160 @@
-/* ===== Certifications ===== */
-#certifications {
-    background-color: #D3D3D3;
-    padding: 20px;
-    margin-bottom: 10px;
-    border-radius: 6px;
+:root {
+    --primary-color: #29a598;
+    --text-color: #394c4a;
+    --background-light: #ffffff;
+    --header-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 110%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    color: #394c4a;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.header-background {
+    background: linear-gradient(rgba(255, 254, 253, 0.7), rgba(255, 254, 253, 0.9)), 
+                url("https://i.imgur.com/TAn6FWz.jpg") center center fixed;
+    background-size: cover;
     text-align: center;
-}
-
-.cert-card {
-    max-width: 500px;
-    margin: 20px auto;
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    cursor: pointer;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
-}
-
-.cert-card:hover {
-    transform: translateY(-4px);
-}
-
-.cert-header {
-    padding: 20px;
-    background: #29a598;
-    color: white;
+    height: 100vh; 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.cert-header h3 {
-    margin: 0;
-    font-size: 1.1rem;
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
 }
 
-.toggle-icon {
-    font-size: 1.5rem;
-    transition: transform 0.3s ease;
+nav ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
 }
 
-.cert-body {
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 20px;
-    background: #fff;
-    transition: max-height 0.5s ease, padding 0.4s ease;
+nav ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-.cert-body p {
-    margin: 15px 0;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Unica One', cursive;
+    font-size: 1.2rem;
 }
 
-.cert-link {
+.header-content img {
+    max-width: 150px;
+    border-radius: 20%;
+}
+
+.header-content h1, .header-content p {
+    margin: 0.5rem 0;
+    font-family: 'Unica One', cursive;
+
+}
+
+#about {
+    background-color: #808080;
+    color: white; 
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 40px;
+    border-radius: 0.5%;
+    text-align: center;
+}
+
+.profile-photo {
+    max-width: 40%;
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#portfolio {
+    background-color: #D3D3D3; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.project {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #050505;
+    margin: 10px;
     display: inline-block;
-    margin-bottom: 15px;
-    font-weight: bold;
+    line-height: 200px;
 }
 
-/* Active state */
-.cert-card.open .cert-body {
-    max-height: 200px;
-    padding: 20px;
+#contact {
+    background-color: #D3D3D3; 
+    padding: 15px;
+    border-radius: 0.5%;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-.cert-card.open .toggle-icon {
-    transform: rotate(45deg);
+.td-btn {
+    padding: 24px 50px;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease-in-out;
+     background-color: #D3D3D3; 
+
 }
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Additional Styles */
+h2 {
+    color: #333;
+    font-family: 'Unica One', cursive;
+    font-size: 2.3rem;
+}
+
+a {
+    color: #29a598;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #208479;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+  
+  .profile-photo {
+        width: 10%; 
+        margin: 0 auto; 
+    }
+}
+
+
+
