@@ -1,4 +1,4 @@
-Minor_project
+# Minor_project
 Implementing Infrastructure as Code with Terraform to Build Kubernetes Infrastructure on    
 AWS and Automate Application Deployment Through Jenkins CI/CD Pipeline Using Docker      
 and GitHub.         
