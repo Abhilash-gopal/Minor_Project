@@ -1,7 +1,8 @@
 # Minor_project
 Implementing Infrastructure as Code with Terraform to Build Kubernetes Infrastructure on    
 AWS and Automate Application Deployment Through Jenkins CI/CD Pipeline Using Docker      
-and GitHub.         
+and GitHub.  
+
 This project aims to automate the provisioning, deployment, and management of cloud  
 infrastructure using Infrastructure as Code (IaC) principles. The Kubernetes infrastructure will be  
 created on AWS using Terraform, ensuring scalability, reproducibility, and efficient resource  
